@@ -42,7 +42,11 @@
       <h2 class="item-header">Featured Deals</h2>
       <h4 class="item-header-desc">All pre-workout's are under 30 bucks and around 30 servings or more.</h4>
       <hr>
-      <div class="col-md-4" ng-repeat="items in listItems.items | filter: {title: search}" ng-include="'item.html'"></div>
+      <ul>
+        <li class="col-md-4" ng-repeat="items in listItems.items | filter: {title: search}">
+          <ng-include src="'item.html'"></ng-include>
+        </li>
+      </ul>
     </section>
 
     </div>
