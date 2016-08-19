@@ -53,7 +53,8 @@ body, html {
   outline: none;
 }
 
-.search-bar span {
+.show-search,
+.hide-search {
   background: #fff;
   padding: 16px;
   border-radius: 50%;
@@ -63,6 +64,10 @@ body, html {
 .info-button:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.hide-search {
+  display: none;
 }
 
 ul {
@@ -114,6 +119,11 @@ li {
   color: #333;
 }
 
+.item-header-desc {
+  text-align: left;
+  opacity: .7;
+}
+
 .item-list img {
   max-width: 120px;
   height: 100px;
@@ -151,6 +161,9 @@ li {
   .hero {
     top: 80px;
     font-size: 5em;
+  }
+  .featured-item {
+    margin-top: 30%;
   }
 }
 
@@ -213,7 +226,7 @@ li {
 
 @media (max-width: 480px) {
   .item-header {
-    font-size: 1.9em;
+    font-size: 2.6em;
   }
   .search-text {
     margin-right: 4px;

@@ -25,8 +25,9 @@
   </section>
 
     <section class="search-bar">
-      <input class="search-text" type="text" placeholder="Search..." ng-model="search">
-      <span class="glyphicon glyphicon-search"></span>
+      <input class="search-text" type="search" placeholder="Search..." ng-model="search">
+      <span class="show-search glyphicon glyphicon-search"></span>
+      <span class="hide-search glyphicon glyphicon-remove"></span>
     </section>
 
     <div class="container">
@@ -40,11 +41,13 @@
       </section>
 
       <section ng-controller="itemsCtrl as listItems" class="item-list">
-        <h2 class="item-header">Featured Deals < $30</h2>
+        <h2 class="item-header">Featured Deals</h2>
+        <h4 class="item-header-desc">All pre-workout's are under 30 bucks and <strong>no</strong> sample sizes</h4>
         <hr>
 
-        <div ng-repeat="items in listItems.items | filter:search">
-            <div ng-include="'item.html'" class="col-md-4"></div>
+        <div ng-repeat="items in listItems.items | filter:search | filter:items">
+          <div ng-include="'item.html'" class="col-md-4"></div>
+        </div>
         </section>
 
       </div>
