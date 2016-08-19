@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="preWorkout">
+<html lang="en" ng-app="preWorkout">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
     <section class="search-bar">
       <input class="search-text" type="search" placeholder="Search..." ng-model="search">
       <span class="show-search glyphicon glyphicon-search"></span>
-      <span class="hide-search glyphicon glyphicon-remove"></span>
+      <span ng-click="search = ''" class="hide-search glyphicon glyphicon-remove"></span>
     </section>
 
     <div class="container">
@@ -45,8 +45,9 @@
         <h4 class="item-header-desc">All pre-workout's are under 30 bucks and <strong>no</strong> sample sizes</h4>
         <hr>
 
-        <div ng-repeat="items in listItems.items | filter:search | filter:items">
-          <div ng-include="'item.html'" class="col-md-4"></div>
+        <div ng-repeat="items in listItems.items | filter:search">
+          <ul ng-include="'item.html'" class="col-md-4">
+          </ul>
         </div>
         </section>
 

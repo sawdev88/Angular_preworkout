@@ -18,10 +18,11 @@ $(function() {
     $('.show-search').fadeIn();
     $('.search-text').fadeOut();
 
+
     if ($(window).width() < 480) {
       $('.header-img').fadeIn();
     }
 
   });
-
+  
 });
