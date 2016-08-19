@@ -28,17 +28,20 @@ var myApp = angular.module('preWorkout', [])
       {
         title: 'Six Star Explosion',
         img : 'img/six.jpg',
-        link : 'https://www.amazon.com/gp/product/B00OXLP6H4/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00OXLP6H4&linkId=dc39fded7f34b3c4b6c5e8be7395bdce'
+        link : 'https://www.amazon.com/gp/product/B00OXLP6H4/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00OXLP6H4&linkId=dc39fded7f34b3c4b6c5e8be7395bdce',
+        under20 : true
       },
       {
         title: 'Muscle Pharm Arnold Schwarzenegger Series Iron Pump',
         img : 'img/arnold.jpg',
-        link : 'https://www.amazon.com/gp/product/B00FCGLHKE/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00FCGLHKE&linkId=02dc0da281fdcfdc80eadc953e079c38'
+        link : 'https://www.amazon.com/gp/product/B00FCGLHKE/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00FCGLHKE&linkId=02dc0da281fdcfdc80eadc953e079c38',
+        under20 : true
       },
       {
         title: 'BPI Sports 1.M.R. Vortex',
         img : 'img/bpi.jpg',
-        link : 'https://www.amazon.com/gp/product/B00O64JPFM/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00O64JPFM&linkId=40c438fb8d002de61261fcbc8fde901f'
+        link : 'https://www.amazon.com/gp/product/B00O64JPFM/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00O64JPFM&linkId=40c438fb8d002de61261fcbc8fde901f',
+        under20 : true
       },
       {
         title: 'RARI NUTRITION - INFINITY',
@@ -53,12 +56,20 @@ var myApp = angular.module('preWorkout', [])
       {
         title: 'MuscleTech Pro Series Neurocore',
         img : 'img/tech.jpg',
-        link : 'https://www.amazon.com/gp/product/B0187S2NLU/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0187S2NLU&linkId=8981f88f41be654b305bc80f9926347d'
+        link : 'https://www.amazon.com/gp/product/B0187S2NLU/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0187S2NLU&linkId=8981f88f41be654b305bc80f9926347d',
+        under20 : true
       },
       {
         title: 'Optimum Nutrition Amino Energy',
         img : 'img/on.jpg',
-        link : 'https://www.amazon.com/gp/product/B005Q8IM6K/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B005Q8IM6K&linkId=40a5c6f418e074d6c66554ba008a3c1d'
+        link : 'https://www.amazon.com/gp/product/B005Q8IM6K/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B005Q8IM6K&linkId=40a5c6f418e074d6c66554ba008a3c1d',
+        under20 : true
+      },
+      {
+        title: 'Force Factor BRX',
+        img : 'img/brx.jpg',
+        link : 'https://www.amazon.com/gp/product/B0084N2WVK/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0084N2WVK&linkId=1f3375effbea7f90e8d6f26927c2b6cd',
+        cheapest : true
       },
       {
         title: 'GAT Clinically Tested Nitraflex, Testosterone Enhancing',
@@ -93,7 +104,8 @@ var myApp = angular.module('preWorkout', [])
       {
         title: 'MuscleTech Anarchy',
         img : 'img/anarchy.jpg',
-        link : 'https://www.amazon.com/gp/product/B00VE95NWQ/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00VE95NWQ&linkId=49b5652eea7e3bf23f8a8c079ee974d6'
+        link : 'https://www.amazon.com/gp/product/B00VE95NWQ/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00VE95NWQ&linkId=49b5652eea7e3bf23f8a8c079ee974d6',
+        under20 : true
       },
       {
         title: 'NITROSURGE',
@@ -108,22 +120,19 @@ var myApp = angular.module('preWorkout', [])
       {
         title: 'Nutrex Research Outrage',
         img : 'img/nutrex.jpg',
-        link : 'https://www.amazon.com/gp/product/B00VBYJX0W/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00VBYJX0W&linkId=3ccb39aee82e49cde5e07cc95ff97bd1'
+        link : 'https://www.amazon.com/gp/product/B00VBYJX0W/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00VBYJX0W&linkId=3ccb39aee82e49cde5e07cc95ff97bd1',
+        under20 : true
       },
       {
         title: 'KRAZ4D',
         img : 'img/kraz4d.jpg',
-        link : 'https://www.amazon.com/gp/product/B018TEDNMA/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B018TEDNMA&linkId=fcd3a3eb7580c579c818e0907b8c091f'
+        link : 'https://www.amazon.com/gp/product/B018TEDNMA/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B018TEDNMA&linkId=fcd3a3eb7580c579c818e0907b8c091f',
+        under20 : true
       },
       {
         title: 'FINAFLEX Stimul8',
         img : 'img/finaflex.jpg',
         link : 'https://www.amazon.com/gp/product/B00EZJ4ILY/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00EZJ4ILY&linkId=2ba9d786e9d146ac8f370c80648dcaed'
-      },
-      {
-        title: 'Force Factor BRX',
-        img : 'img/brx.jpg',
-        link : 'https://www.amazon.com/gp/product/B0084N2WVK/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0084N2WVK&linkId=1f3375effbea7f90e8d6f26927c2b6cd'
       },
       {
         title: 'Savage Roar | Dynamik Muscle',
@@ -133,7 +142,8 @@ var myApp = angular.module('preWorkout', [])
       {
         title: 'MRM Driven Natural',
         img : 'img/driven.jpg',
-        link : 'https://www.amazon.com/gp/product/B0052ONYEI/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0052ONYEI&linkId=ce8d74e063b8c877071c42ee9e1ed8af'
+        link : 'https://www.amazon.com/gp/product/B0052ONYEI/ref=as_li_tl?ie=UTF8&tag=103c6-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0052ONYEI&linkId=ce8d74e063b8c877071c42ee9e1ed8af',
+        under20 : true
       },
       {
         title: 'MuscleTech Shatter SX-7',

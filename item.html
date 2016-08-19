@@ -1,3 +1,15 @@
+<div ng-show="items.under20" class="under-20">
+  <a href="{{items.link}}">
+    <h6>under</h6>
+    <p>$20</p>
+  </a>
+</div>
+<div ng-show="items.cheapest" class="cheapest">
+  <a href="{{items.link}}">
+    <h6>lowest</h6>
+    <p>cost</p>
+  </a>
+</div>
 <a href="{{items.link}}"><img ng-src="{{items.img}}" alt="{{items.title}}"></a>
 <h3>{{items.title}}</h3>
 <a href="{{items.link}}">

@@ -138,6 +138,35 @@ li {
   border-bottom: 1px solid rgba(200, 200, 200, 0.6);
 }
 
+.under-20,
+.cheapest {
+  position: absolute;
+  background: #03b7b7;
+  border-radius: 50%;
+  padding: 12px 14px;
+  margin-left: 32px;
+}
+
+.under-20 h6,
+.cheapest h6 {
+  margin: 0;
+}
+
+.under-20 p,
+.cheapest p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.under-20 a,
+.cheapest a {
+  color: #fff;
+}
+
+.cheapest {
+  background: #e74646;
+}
+
 .footer {
   background: #2EDFFF;
   color: #fff;
