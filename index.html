@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="js/app.js" charset="utf-8"></script>
-</head>
+    <script src="js/production.js" charset="utf-8"></script>
+  </head>
 <body>
 
   <header class="header">
     <div class="header-img">
-        <img src="img/header-img.svg" alt="">
+      <img src="img/header-img.svg" alt="">
     </div>
     <h1 class="hero">Cheap Pre-Workouts</h1>
   </header>
@@ -24,58 +24,52 @@
     <h1 class="mobile-hero">Cheap Pre-Workouts</h1>
   </section>
 
-    <section class="search-bar">
-      <input class="search-text" type="search" placeholder="Search..." ng-model="search">
-      <span class="show-search glyphicon glyphicon-search"></span>
-      <span ng-click="search = ''" class="hide-search glyphicon glyphicon-remove"></span>
+  <section class="search-bar">
+    <input class="search-text" type="search" placeholder="Search..." ng-model="search">
+    <span class="show-search glyphicon glyphicon-search"></span>
+    <span ng-click="search = ''" class="hide-search glyphicon glyphicon-remove"></span>
+  </section>
+
+  <div class="container">
+
+    <section ng-controller="featuredItemCtrl as featuredItem" class="featured-item">
+      <div class="row">
+        <div class="featured-text col-md-4 pull-right" ng-include="'featuredItem.html'"></div>
+      </div>
     </section>
 
-    <div class="container">
+    <section ng-controller="itemsCtrl as listItems" class="item-list">
+      <h2 class="item-header">Featured Deals</h2>
+      <h4 class="item-header-desc">All pre-workout's are under 30 bucks and around 30 servings or more.</h4>
+      <hr>
+      <div class="col-md-4" ng-repeat="items in listItems.items | filter: {title: search}" ng-include="'item.html'"></div>
+    </section>
 
-      <section ng-controller="featuredItemCtrl as featuredItem" class="featured-item">
-        <div class="row">
-          <div class="featured-text col-md-4 pull-right" ng-include="'featuredItem.html'">
-
-          </div>
-        </div>
-      </section>
-
-      <section ng-controller="itemsCtrl as listItems" class="item-list">
-        <h2 class="item-header">Featured Deals</h2>
-        <h4 class="item-header-desc">All pre-workout's are under 30 bucks and around 30 servings or more.</h4>
-        <hr>
-
-        <div ng-repeat="items in listItems.items | filter:search">
-          <ul ng-include="'item.html'" class="col-md-4">
-          </ul>
-        </div>
-        </section>
-
-      </div>
     </div>
+  </div>
 
-    <footer class="footer text-left">
-      <p>&copy;2016. All Rights Reserved. All prices subject to change.</p>
-    </footer>
+  <footer class="footer text-left">
+    <p>&copy;2016. All Rights Reserved. All prices subject to change.</p>
+  </footer>
 
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            },
-            i[r].l = 1 * new Date();
-            a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          },
+          i[r].l = 1 * new Date();
+          a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-81003885-5', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/script.js" charset="utf-8"></script>
-    </body>
+      ga('create', 'UA-81003885-5', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
 </html>

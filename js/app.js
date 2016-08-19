@@ -1,5 +1,5 @@
 var myApp = angular.module('preWorkout', [])
-  .controller('featuredItemCtrl', function () {
+  .controller('featuredItemCtrl', [function () {
 
     var featuredItem = this;
 
@@ -10,8 +10,8 @@ var myApp = angular.module('preWorkout', [])
       under20 : true
     };
 
-  })
-  .controller('itemsCtrl', function () {
+  }])
+  .controller('itemsCtrl', [function () {
 
     var listItems = this;
 
@@ -222,4 +222,4 @@ var myApp = angular.module('preWorkout', [])
       }
     ];
 
-  });
+  }]);

@@ -171,6 +171,7 @@ li {
   background: #2EDFFF;
   color: #fff;
   margin-top: 32px;
+  display: none;
 }
 
 .footer p {
