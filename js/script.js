@@ -24,6 +24,4 @@ $(function() {
 
   });
 
-  $('.footer').fadeIn();
-
 });
